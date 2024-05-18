@@ -1,0 +1,171 @@
+/* JAI SIYA RAM */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy-Regular;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: relative;
+}
+
+body{
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    width: 80%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: absolute;
+    top: 26%;
+}
+
+.list-item {
+    background: linear-gradient(to right, #1e7e7e, #abb36d, #6a96eb);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    mix-blend-mode: difference;
+}
+
+.list-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list-item h3 {
+    margin: 0;
+}
+
+.list-item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+#top{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    top: 4%;
+    padding: 10px 70px;
+    border-bottom: 2px solid #c6c6c6a5;
+}
+
+#heading{
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+#add-item{
+    padding: 12px 70px;
+    font-size: 1.5vw;
+    font-family: Gilroy-Regular;
+    color: #fff;
+    background: transparent;
+    outline: none;
+    border: 2px solid #6b6b6b;
+    border-radius: 30px;
+    transition: all 0.7s ease;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+#add-item:hover{
+    background: #ffffffe7;
+    color: #000;
+    border: 2px solid #ffffffe7;
+    transition: all 0.7s ease;
+}
+
+.hidden{
+    display: none;
+}
+
+.my-form-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.form-container {
+    position: absolute;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.form-group input[type="submit"]:hover{
+    background: #17931b;
+}
+
+.closeForm{
+    display: flex;
+    z-index: 1;
+    width: 70px;
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    cursor: pointer;
+}
